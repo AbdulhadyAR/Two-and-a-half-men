@@ -19,7 +19,7 @@ The show maintained consistently strong ratings above 7.5 during Charlie Sheen's
 
 ![Average ratings by episode](/assets/img/avg-ratings-by-episode.png) 
 
-The episode ratings show distinct patterns between the two eras. Sheen's performances ranged from a season-low 7.1 (Episode 5) to a peak of 8.2 in his final season. Kutcher's episodes opened at a series-low 5.75 (Episode 5) before recovering to 6.73 (Episode 19), still significantly below Sheen's average performance. The data reveals a notable rating differential between the two leads' tenures.
+The episode ratings show distinct patterns between the two eras. Sheen's performances ranged from a season-low of 7.1 (Episode 5) to a peak of 8.2 in his final episodes. Kutcher's episodes opened at a series-low 5.75 (Episode 5) before recovering to 6.73 (Episode 19), still significantly below Sheen's average performance. The data reveals a notable rating differential between the two leads' tenures.
 
 ## Votes over the show
 ![Median of votes by season](/assets/img/median-of-votes-by-season.png) ![Median of votes by episode](/assets/img/median-of-votes-by-episode.png) 

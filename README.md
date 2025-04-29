@@ -13,5 +13,27 @@ Since no ready-to-use datasets were available, I conducted primary research by g
 The raw scraped data was cleaned and formatted into structured CSVs, ensuring consistency for further statistical and textual analysis.
 
 ## IMDB ratings over the show
-![Average rating by season](/assets/img/avg-rating-by-season.png) 
-The show thrived with Charlie Sheen, maintaining strong ratings above 7.5 for eight seasons. His departure marked a turning point - when Ashton Kutcher took over in Season 9, ratings immediately dropped to 6.0. Though they saw a slight rebound afterward, the decline continued, bottoming out at 5.4 in the final season. This trajectory clearly demonstrates how crucial Sheen's presence was to the show's success and how difficult it proved to maintain audience engagement after such a significant cast change. The numbers tell a story of a series that never fully recovered from losing its original star.
+![Average ratings by season](/assets/img/avg-ratings-by-season.png) 
+
+The show maintained consistently strong ratings above 7.5 during Charlie Sheen's eight-season tenure. Following his departure and Ashton Kutcher's arrival in Season 9, ratings fell to 6.0, with a temporary rebound before ultimately declining to 5.4 in the final season. This rating pattern coincided with the lead actor transition, showing a notable shift in audience reception during the later seasons.
+
+![Average ratings by season](/assets/img/avg-ratings-by-season.png) 
+
+The episode ratings show distinct patterns between the two eras. Sheen's performances ranged from a season-low 7.1 (Episode 5) to a peak of 8.2 in his final season. Kutcher's episodes opened at a series-low 5.75 (Episode 5) before recovering to 6.73 (Episode 19), still significantly below Sheen's average performance. The data reveals a notable rating differential between the two leads' tenures.
+
+## Votes over the show
+![Median of votes by season](/assets/img/median-of-votes-by-season.png) ![Median of votes by episode](/assets/img/median-of-votes-by-episode.png) 
+
+The data reveals a decline in median votes during the later seasons, with noticeably lower numbers coinciding with Kutcher's arrival and Sheen's departure. While Sheen's episodes maintained higher vote counts, the post-transition seasons saw a sustained reduction in voter participation. This pattern suggests decreased viewer engagement during the show's later years, though multiple factors could contribute to such trends.
+
+## Ratings vs Votes
+![Ratings vs votes ](/assets/img/ratings-vs-votes.png) 
+
+
+The graph shows Kutcher's episodes attracted the highest vote counts, with notable spikes occurring during two key moments: his debut episode and his final appearance in the series finale.
+
+![Highest number of votes ](/assets/img/highest-votes.png) 
+
+These peaks in viewer participation frame his tenure on the show, marking both his introduction and departure as particularly engaging moments for the audience.
+
+## User reviews

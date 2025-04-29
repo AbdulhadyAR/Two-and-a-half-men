@@ -88,6 +88,6 @@ Neural Network - Deep learning model detecting complex sentiment patterns
 
 The evaluation shows logistic regression performs best overall with 83% accuracy and strong F1 scores for neutral (0.87) and positive (0.83) sentiments. While Naive Bayes handles negative reviews slightly better (F1=0.71) and SVM excels at neutral recall (96%), all models struggle with negative sentiment detection (30-60% recall).
 
-![Confusion matrix](/assets/img/confusion-matrix.png) 
+![confusion matrix](/assets/img/confusion-matrix.png) 
 
 Logistic regression emerges as the preferred default choice, with potential adjustments to class weighting for improved negative detection. The consistent challenges with negative sentiment classification across models may indicate underlying dataset limitations.

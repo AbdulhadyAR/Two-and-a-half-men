@@ -37,3 +37,57 @@ The graph shows Kutcher's episodes attracted the highest vote counts, with notab
 These peaks in viewer participation frame his tenure on the show, marking both his introduction and departure as particularly engaging moments for the audience.
 
 ## User reviews
+![neurtal reviews](/assets/img/neutral-reviews.png) ![positive reviews ](/assets/img/positive-reviews.png) 
+
+The analysis of review word clouds reveals distinct patterns in viewer sentiment. In neutral reviews, prominent terms like "bring back," "without," "left," and "ruined" frequently appear, potentially reflecting audience reactions to the cast transition. Meanwhile, positive reviews show "Charlie" as the most dominant word, suggesting his strong association with favorable viewer perceptions during his tenure on the show.
+
+## Decision Tree Regressor
+
+Decision trees can effectively predict numbers like TV ratings by finding patterns in data. The model works by repeatedly splitting the data into groups based on important factors.
+
+For this project, I built a decision tree to guess episode ratings. First, I removed:
+
+Actual ratings (prevent bias)
+
+Text lengths (low relevance)
+
+
+![Result](/assets/img/decision-tree-result.png) 
+
+The model performed well at guessing ratings. The below image shows how the predicted points are close to the line which represents the actual values. While these results look good, I'll test other methods to find the best approach.
+
+![Actual vs Predicted](/assets/img/actual-vs-predicted.png) 
+
+## Random Forest vs. XGBoost: Which Did Better?
+
+Random Forest and XGBoost are both powerful ensemble methods that combine multiple decision trees to improve predictions. Random Forest builds independent trees and averages their results, while XGBoost sequentially improves trees by learning from previous errors.
+
+![Actual vs Predicted](/assets/img/rf-vs-xgb.png) 
+
+In our tests, Random Forest captured slightly better overall trends (R² 0.9039 vs 0.8999), while XGBoost delivered marginally more precise individual predictions (MAE 0.1982 vs 0.2038). The choice depends on whether you prioritize broad pattern recognition or exact rating estimates.
+
+![Feature importance](/assets/img/feature-importance.png) 
+
+
+the figure above explains season and cast changes (like Charlie Sheen's presence) are the biggest rating predictors. While vote counts have some influence, episode numbers contribute little - we might remove this feature to boost accuracy, but we have to proceed carefully to avoid overfitting the model to our specific dataset.
+
+## Sentiment Classifier
+
+To analyze viewer sentiment, I developed a classification system comparing four machine learning approaches:
+
+Logistic Regression - A linear model estimating positive/negative probability
+
+Naive Bayes - Applies probability theory with feature independence assumption
+
+SVM (Support Vector Machine) - Creates optimal decision boundaries in high-dimensional space
+
+Neural Network - Deep learning model detecting complex sentiment patterns
+
+![Sentiment classifier result](/assets/img/sentiment-classifier-results.png) 
+
+
+The evaluation shows logistic regression performs best overall with 83% accuracy and strong F1 scores for neutral (0.87) and positive (0.83) sentiments. While Naive Bayes handles negative reviews slightly better (F1=0.71) and SVM excels at neutral recall (96%), all models struggle with negative sentiment detection (30-60% recall).
+
+![Confusion matrix](/assets/img/confusion-matrix.png) 
+
+Logistic regression emerges as the preferred default choice, with potential adjustments to class weighting for improved negative detection. The consistent challenges with negative sentiment classification across models may indicate underlying dataset limitations.

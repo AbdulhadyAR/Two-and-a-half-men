@@ -93,7 +93,7 @@ The evaluation shows logistic regression performs best overall with 83% accuracy
 Logistic regression emerges as the preferred default choice, with potential adjustments to class weighting for improved negative detection. The consistent challenges with negative sentiment classification across models may indicate underlying dataset limitations.
 
 ## Reference
-[Two and a half men - IMDB](https://www.imdb.com/title/tt0369179/reviews/?ref_=ttep_ql_2)
+[Two and a Half Men - IMDB](https://www.imdb.com/title/tt0369179/reviews/?ref_=ttep_ql_2)
 
 [Charlie Sheen and Chuck Lorre’s Ups and Downs After ‘Two and a Half Men’ Firing, ‘How to Be a Bookie’ Reunion](https://www.usmagazine.com/celebrity-news/pictures/two-and-a-half-mens-charlie-sheen-chuck-lorres-ups-and-downs/)
 

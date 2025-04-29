@@ -17,7 +17,7 @@ The raw scraped data was cleaned and formatted into structured CSVs, ensuring co
 
 The show maintained consistently strong ratings above 7.5 during Charlie Sheen's eight-season tenure. Following his departure and Ashton Kutcher's arrival in Season 9, ratings fell to 6.0, with a temporary rebound before ultimately declining to 5.4 in the final season. This rating pattern coincided with the lead actor transition, showing a notable shift in audience reception during the later seasons.
 
-![Average ratings by season](/assets/img/avg-ratings-by-season.png) 
+![Average ratings by episode](/assets/img/avg-ratings-by-episode.png) 
 
 The episode ratings show distinct patterns between the two eras. Sheen's performances ranged from a season-low 7.1 (Episode 5) to a peak of 8.2 in his final season. Kutcher's episodes opened at a series-low 5.75 (Episode 5) before recovering to 6.73 (Episode 19), still significantly below Sheen's average performance. The data reveals a notable rating differential between the two leads' tenures.
 

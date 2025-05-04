@@ -3,30 +3,34 @@
 ![photo](/assets/img/Two-and-a-Half-Men.jpg) 
 Warner Bros Tv/Chuck Lorre Prod/Kobal/Shutterstock
 
-#### "Two and a Half Men" was a wildly popular CBS sitcom that followed the life of Charlie Harper (Charlie Sheen), a carefree bachelor whose lifestyle is disrupted when his divorced brother Alan (Jon Cryer) and nephew Jake (Angus T. Jones) move in with him. The show became a cultural phenomenon, running for 12 seasons from 2003 to 2015.
-#### The series faced an unprecedented challenge in 2011 when Charlie Sheen was dismissed following public controversies (Source: US Magazine). Ashton Kutcher joined as a new lead character, creating a natural experiment in television - how does replacing a lead actor impact a show's success? This project employs data science and machine learning techniques to quantify that impact.
+#### CBS aired the very successful sitcom "Two and a Half Men" from 2003-2015 with the plot centering around the life of carefree bachelor Charlie Harper (performed by Sheen), whose calm existence gets turned upside down when his divorced brother Alan (Cryer) and nephew Jake (Jones) move in with him. The show became a cultural phenomenon, running for 12 seasons.
+
+#### An unprecedented event occurred in 2011 when Sheen was dismissed from the show due to public controversies (US Magazine). A new lead character played by Ashton Kutcher was later introduced. The natural experiment in television was put into place: what happens to a show's success when the lead actor is replaced? This project seeks to answer that using data science and machine learning approaches.
 
 ## Data Collection and Preparation
-Since no ready-to-use datasets were available, I conducted primary research by gathering data from IMDb, which contained episodes rating and user reviews. Using the Selenium library, I scraped two key components from the website:
-#### 1. Episode ratings: Each entry includes the episode title, episode description, season and episode number, average rating, vote count, and air date. 
-#### 2. User reviews: Unstructured textual feedback containing review title, review text, rating (if provided), and date posted. 
-The raw scraped data was cleaned and formatted into structured CSVs, ensuring consistency for further statistical and textual analysis.
+Because there were no datasets available for immediate use, I collected data from IMDb that had episodes rating and users reviews. With the Selenium library, I scraped the following two essential key components from the site:
+
+1. **Episodes rating:** Each record contains the episode title, episode description, season and episode number, average rating, vote count, and air date.
+
+2. **User reviews:** Unstructured textual feedback containing review title, review text, rating (if provided), and date posted.
+
+I prepared the raw scraped data by cleaning and organizing it into structured CSV files to ensure consistency for subsequent statistical and textual analysis.
 
 [Link to the Tableau visualizations](https://public.tableau.com/views/Twoandahalfmen/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## IMDB ratings over the show
 ![Average ratings by season](/assets/img/avg-ratings-by-season.png) 
 
-The show maintained consistently strong ratings above 7.5 during Charlie Sheen's eight-season tenure. Following his departure and Ashton Kutcher's arrival in Season 9, ratings fell to 6.0, with a temporary rebound before ultimately declining to 5.4 in the final season. This rating pattern coincided with the lead actor transition, showing a notable shift in audience reception during the later seasons.
+The series maintained impressive ratings above 7.5 through Sheen's eight season period. After his departure and Ashton Kutcher’s arrival in Season 9, the ratings fell to 6.0 with some temporary recovery before ultimately dropping to 5.4 during the show’s last season. This pattern of rating changes aligned with the change in lead actors with a clear dip in audience appreciation in the later seasons.
 
 ![Average ratings by episode](/assets/img/avg-ratings-by-episode.png) 
 
-The episodes rating show distinct patterns between the two eras. Sheen's performances ranged from a series-low of 7.1 (Episode 5) to a peak of 8.2 in his final episodes. Kutcher's episodes opened at a series-low of 5.75 (Episode 5) before recovering to 6.73 (Episode 19), still significantly below Sheen's average performance. The data reveals a notable rating differential between the two leads' tenures.
+The rating patterns of the episodes indicate differences between the two periods. Sheen’s performances varied from a series low of 7.1 in Episode 5 to a high of 8.2 in his final episodes. Kutcher’s episodes started with a series low of 5.75 in Episode 5 and climbed to 6.73 in Episode 19, still considerably lower than Sheen’s average. The information captures a striking gap in ratings between the two leads’ periods.
 
 ## Votes over the show
 ![Median of votes by season](/assets/img/median-of-votes-by-season.png) ![Median of votes by episode](/assets/img/median-of-votes-by-episode.png) 
 
-The data reveals a decline in median votes during the later seasons, with noticeably lower numbers coinciding with Kutcher's arrival and Sheen's departure. While Sheen's episodes maintained higher vote counts, the post-transition seasons saw a sustained reduction in voter participation. This pattern suggests decreased viewer engagement during the show's later years, though multiple factors could contribute to such trends.
+The data shows a drop in the median votes for later seasons, with the lowest numbers aligning with Kutcher’s tenure and Sheen’s exit. While Sheen’s episodes received higher vote counts, the subsequent seasons maintained a lower voter turnout. This indicates reduced voters’ attention during the later years of the show, however there are several reasons that could be attributed to the change.
 
 ## Ratings vs Votes
 ![Ratings vs votes ](/assets/img/ratings-vs-votes.png) 
@@ -41,7 +45,7 @@ These peaks in viewer participation frame his tenure on the show, marking both h
 ## User reviews
 ![neurtal reviews](/assets/img/neutral-reviews.png) ![positive reviews ](/assets/img/positive-reviews.png) 
 
-The analysis of the review word clouds reveals distinct patterns in viewer sentiment. In neutral reviews, prominent terms like "bring back," "without," "left," and "ruined" frequently appear, potentially reflecting audience reactions to the cast transition. Meanwhile, positive reviews show "Charlie" as the most dominant word, suggesting his strong association with favorable viewer perceptions during his tenure on the show.
+Examining the review word clouds shows some viewer sentiment patterns. In the neutral reviews, “bring back, without, left, and ruined” stand out as common phrases which may mirror audience sentiments regarding the cast change. On the other hand, positive reviews feature “Charlie” as the most prominent keyword which indicates strong associations from the viewers during his run on the show.
 
 ## Decision Tree Regressor
 
@@ -88,19 +92,19 @@ Neural Network - Deep learning model detecting complex sentiment patterns.
 ![Sentiment classifier result](/assets/img/sentiment-classifier-results.png) 
 
 
-The evaluation shows logistic regression performs best overall with 83% accuracy and strong F1 scores for neutral (0.87) and positive (0.83) sentiments. While Naive Bayes handles negative reviews slightly better (F1=0.71) and SVM excels at neutral recall (96%), all models struggle with negative sentiment detection (30-60% recall).
+According to the analysis, logistic regression achieves the highest accuracy of 83%, alongside F1 scores of 0.87 and 0.83 for neutral and positive sentiments, respectively. Although Naive Bayes performs better with negative sentiments (F1=0.71) and SVM performs better with neutral recall (96%), all models struggle with detecting negative sentiment, ranging from 30-60% recall.
 
 ![confusion matrix](/assets/img/confusion-matrix.png) 
 
 Logistic regression emerges as the preferred default choice, with potential adjustments to class weighting for improved negative detection. The consistent challenges with negative sentiment classification across models may indicate underlying dataset limitations.
 
-## Final Verdict: The Numbers Don’t Lie
+## Final Say: The Numbers Don’t Lie
 
-The data paints a clear picture: Two and a Half Men thrived under Charlie Sheen’s lead, with consistently high ratings (7.5–8.2) and strong viewer engagement. His departure marked a turning point—while Ashton Kutcher’s arrival brought temporary curiosity (evidenced by vote spikes), the show never fully recovered its original appeal. Ratings dropped by 20% in Season 9 and continued to decline, settling at 5.4 by the finale.
+The figures tell a story: Two and a Half Men was exceptionally successful with Sheen as the lead, maintaining consistent high ratings and viewer engagement. His departure coincided with a drop in ratings; though Ashton Kutcher's addition sparked short-lived interest (as indicated by the vote spikes), the show never regained its charm. In Season 9, ratings dropped by 20% and settled at 5.4 by the series finale.
 
-Machine learning models confirmed what fans felt: seasons and cast changes were the top predictors of success, far outweighing other factors. Random Forest outperformed XGBoost in capturing trends (R²=0.90), while sentiment analysis revealed lingering nostalgia for Sheen (the word "Charlie" dominated positive reviews). Though the show survived the transition, the data suggests some chemistry is simply irreplaceable.
+Machine learning models revealed what loyal fans already knew: cast and season changes were the show's biggest predictors of success, far outweighing everything else. Random Forest proved better than XGBoost at capturing trends (R²=0.90), and through sentiment analysis, it was clear that fans still held affection for Sheen (the name “Charlie” came up most among positive reviews). While the show was able to survive post-Sheen, data indicates that some chemistry cannot be duplicated.
 
-This project highlights how data science can decode cultural shifts—proving that even in entertainment, numbers often tell the most honest story.
+This work demonstrates the power of data science in analyzing shifts in culture—and shows how, even in the entertainment world, statistics often reveal the unfiltered truth.
 
 ## Reference
 [Two and a Half Men - IMDB](https://www.imdb.com/title/tt0369179/reviews/?ref_=ttep_ql_2)

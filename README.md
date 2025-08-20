@@ -70,7 +70,7 @@ Random Forest and XGBoost are both powerful ensemble methods that combine multip
 
 ![Actual vs Predicted](/assets/img/rf-vs-xgb.png) 
 
-In our tests, Random Forest captured slightly better overall trends (R² 0.9039 vs 0.8999), while XGBoost delivered marginally more precise individual predictions (MAE 0.1982 vs 0.2038). The choice depends on whether you prioritize broad pattern recognition or exact rating estimates.
+In our tests, Random Forest captured slightly better overall trends (R² 0.9039 vs 0.8999), while XGBoost delivered marginally more precise individual predictions (MAE 0.1982 vs 0.2038).
 
 ![Feature importance](/assets/img/feature-importance.png) 
 

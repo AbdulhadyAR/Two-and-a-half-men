@@ -79,7 +79,7 @@ The figure above explains seasons and cast changes (like Charlie Sheen's presenc
 
 ## Sentiment Classifier
 
-To analyze viewer sentiment, I developed a classification system comparing four machine learning approaches:
+To analyze viewer sentiment, I developed a classification model comparing four machine learning approaches:
 
 Logistic Regression - A linear model estimating positive/negative probability.
 

@@ -75,7 +75,7 @@ In our tests, Random Forest captured slightly better overall trends (R² 0.9039 
 ![Feature importance](/assets/img/feature-importance.png) 
 
 
-The figure above explains seasons and cast changes (like Charlie Sheen's presence) are the biggest rating predictors. While vote counts have some influence, episode numbers contribute little - we might remove this feature to boost accuracy, but we have to proceed carefully to avoid overfitting the model to our specific dataset.
+The figure above explains seasons and cast changes (Charlie Sheen's presence) are the biggest rating predictors. While vote counts have some influence, episode numbers contribute little - we might remove this feature to boost accuracy, but we have to proceed carefully to avoid overfitting the model to our specific dataset.
 
 ## Sentiment Classifier
 

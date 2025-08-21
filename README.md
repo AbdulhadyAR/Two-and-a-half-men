@@ -81,7 +81,7 @@ The figure above explains seasons and cast changes (Charlie Sheen's presence) ar
 
 The figures tell a story: Two and a Half Men was exceptionally successful with Sheen as the lead, maintaining consistent high ratings and viewer engagement. His departure coincided with a drop in ratings; though Ashton Kutcher's addition sparked short-lived interest (as indicated by the vote spikes), the show never regained its charm. In Season 9, ratings dropped by 20% and settled at 5.4 by the series finale.
 
-Machine learning models revealed what loyal fans already knew: cast and season changes were the show's biggest predictors of success, far outweighing everything else. Random Forest proved better than XGBoost at capturing trends (R²=0.90), and through sentiment analysis, it was clear that fans still held affection for Sheen (the name “Charlie” came up most among positive reviews). While the show was able to survive post-Sheen, data indicates that some chemistry cannot be duplicated.
+Machine learning models revealed what loyal fans already knew: cast and season changes were the show's biggest predictors of success, far outweighing everything else. Random Forest proved slightly better than XGBoost at capturing trends (R²=0.90), and through sentiment analysis, it was clear that fans still held affection for Sheen (the name “Charlie” came up most among positive reviews). While the show was able to survive post-Sheen, data indicates that some chemistry cannot be duplicated.
 
 This work demonstrates the power of data science in analyzing shifts in culture—and shows how, even in the entertainment world, statistics often reveal the unfiltered truth.
 

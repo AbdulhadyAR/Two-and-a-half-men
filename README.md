@@ -77,27 +77,6 @@ In our tests, Random Forest captured slightly better overall trends (R² 0.9039 
 
 The figure above explains seasons and cast changes (Charlie Sheen's presence) are the biggest rating predictors. While vote counts have some influence, episode numbers contribute little - we might remove this feature to boost accuracy, but we have to proceed carefully to avoid overfitting the model to our specific dataset.
 
-## Sentiment Classifier
-
-To analyze viewer sentiment, I developed a classification model comparing four machine learning approaches:
-
-Logistic Regression - A linear model estimating positive/negative probability.
-
-Naive Bayes - Applies probability theory with feature independence assumption.
-
-SVM (Support Vector Machine) - Creates optimal decision boundaries in high-dimensional space.
-
-Neural Network - Deep learning model detecting complex sentiment patterns.
-
-![Sentiment classifier result](/assets/img/sentiment-classifier-results.png) 
-
-
-According to the analysis, logistic regression achieves the highest accuracy of 83%, alongside F1 scores of 0.87 and 0.83 for neutral and positive sentiments, respectively. Although Naive Bayes performs better with negative sentiments (F1=0.71) and SVM performs better with neutral recall (96%), all models struggle with detecting negative sentiment, ranging from 30-60% recall.
-
-![confusion matrix](/assets/img/confusion-matrix.png) 
-
-Logistic regression emerges as the preferred default choice, with potential adjustments to class weighting for improved negative detection. The consistent challenges with negative sentiment classification across models may indicate underlying dataset limitations.
-
 ## Final Say: The Numbers Don’t Lie
 
 The figures tell a story: Two and a Half Men was exceptionally successful with Sheen as the lead, maintaining consistent high ratings and viewer engagement. His departure coincided with a drop in ratings; though Ashton Kutcher's addition sparked short-lived interest (as indicated by the vote spikes), the show never regained its charm. In Season 9, ratings dropped by 20% and settled at 5.4 by the series finale.
